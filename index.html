@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" sizes="32x32" href="img/bruno.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+<title>Galeria</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <h1>Galeria de imagenes</h1>
+                <p>Html, Css y Javascript</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Naturaleza</a>
+                <a href="#">Ciudades</a>
+                <a href="#">Personas</a>
+                <a href="#">Animales</a>
+            </div>
+        </header>
+
+        <section class="grid" id="grid">
+            <div class="item" 
+            data-categoria="ciudades" 
+            data-etiquetas="ciudades autos carros calles"
+            data-descripcion="1.- Un dia mas en las calles de Tokyo">
+                <div class="item-contenido">
+                    <img src="img/ciudad1.png" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="personas" 
+            data-etiquetas="personas mujeres"
+            data-descripcion="2.- Modelo de revistas">
+                <div class="item-contenido">
+                    <img src="img/persona1.png" alt="">
+                </div>
+            </div>
+            
+            <div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas mar playas"
+				 data-descripcion="3.- Montañas de Irlanda"
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales leones"
+				 data-descripcion="4.- Leon de 30 años"
+			>
+				<div class="item-contenido">
+					<img src="img/animal1.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="animales"
+				 data-etiquetas="animales pandas"
+				 data-descripcion="5.- Bebe oso panda asiatico"
+			>
+				<div class="item-contenido">
+					<img src="img/animal2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="personas"
+				 data-etiquetas="personas mujeres"
+				 data-descripcion="6.- Mujer posando ante camara"
+			>
+				<div class="item-contenido">
+					<img src="img/persona2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="paisajes"
+				 data-etiquetas="paisajes montañas niebla"
+				 data-descripcion="7.- Montañas nubladas"
+			>
+				<div class="item-contenido">
+					<img src="img/paisaje2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="ciudades"
+				 data-etiquetas="ciudades paisajes carreteras"
+				 data-descripcion="8.- Nueva York desde arriba"
+			>
+				<div class="item-contenido">
+					<img src="img/ciudad2.png" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="naturaleza"
+				 data-etiquetas="naturaleza hojas plantas"
+				 data-descripcion="9.- Selva amazonica"
+			>
+				<div class="item-contenido">
+					<img src="img/naturaleza1.png" alt="">
+				</div>
+			</div>
+        </section>
+
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button class="btn-cerrar-popup" id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="https://twitter.com" target="_blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.facebook.com/bruno.millalipe" target="_blank" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://instagram.com" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p>Sitio creado por <a href="#">Bruno Millalipe</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
