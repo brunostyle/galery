@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
 	grid.refreshItems().layout();
 	document.getElementById('grid').classList.add('imagenes-cargadas');
 
-	// Agregamos los listener de los enlaces para filtrar por categoria.
+	// Agregamos los listener de los enlaces para filtrar por categoria
 	const enlaces = document.querySelectorAll('#categorias a');
 	enlaces.forEach((elemento) => {
 		elemento.addEventListener('click', (evento) => {
